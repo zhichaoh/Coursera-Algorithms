@@ -17,6 +17,7 @@ public class BurrowsWheeler {
 		return asArray(indexes);
 	}
 
+	@SafeVarargs
 	private static <T extends Number> int[] asArray(final T... a) {
 		int[] b = new int[a.length];
 		for (int i = 0; i < b.length; i++) {
