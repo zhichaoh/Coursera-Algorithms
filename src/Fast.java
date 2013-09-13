@@ -47,11 +47,15 @@ public class Fast {
         		} 
         		if(nList.size()>=4) {
         			boolean printedFlag = false;
-        			for(int k=0;k<nList.size()-1;k++) if(!printedMap.containsKey(nList.get(k).toString()+","+nList.get(k+1).toString())) printedFlag = true;
+        			for(int k=0;k<nList.size()-1;k++) {
+        				String seg = nList.get(k).toString()+","+nList.get(k+1).toString();
+        				if(!printedMap.containsKey(seg)) {
+        					printedMap.put(seg, true);
+        					printedFlag = true;
+        				}
+        			}
         			if(printedFlag){
 						Collections.sort(nList);
-        				for(int k=0;k<nList.size()-1;k++) printedMap.put(nList.get(k).toString()+","+nList.get(k+1).toString(), true);
-        				printedMap.put(points.get(i).toString(), true);
 						for(int k=0;k<nList.size()-1;k++) System.out.print(nList.get(k)+" -> ");
 						System.out.print(nList.get(nList.size()-1)+"\n");
 						points.get(i).drawTo(nList.get(nList.size()-1));
