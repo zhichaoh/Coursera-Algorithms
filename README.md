@@ -19,9 +19,18 @@ PA-2 Randomized Queues and Deques (Queue and Stack)
 			http://coursera.cs.princeton.edu/algs4/assignments/queues.html
 		Code:
 			Deque.java;
-			RandomizedQueue.java
+			RandomizedQueue.java;
 			Subset.java
-	
+
+PA-3 Pattern Recognition (Sort)
+###
+		Specification:
+			http://coursera.cs.princeton.edu/algs4/assignments/collinear.html
+		Code:
+			Point.java;
+			Brute.java;
+			Fast.java
+
 Part II
 
 PA-1 WordNet
