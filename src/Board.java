@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 
 
 public class Board {
@@ -93,10 +96,25 @@ public class Board {
     	if(!(y instanceof Board)) return false;
     	return this.outPlace(board, ((Board)y).board)==0;
     }
+    
     public Iterable<Board> neighbors() {
     	// all neighboring boards
+    	List<Board> boards = new ArrayList<Board>();
+    	for(int i=0;i<N;i++)
+    		for(int j=0;j<N;j++){
+    			if(this.board[i][j]==0) {
+    				
+    			}
+    		}
     }
+    
     public String toString() {
     	// string representation of the board (in the output format specified below)
+    	StringBuilder str = new StringBuilder();
+    	for(int i=0;i<N;i++) {
+    		for(int j=0;j<N;j++) str.append(this.board[i][j]+" ");
+    		str.append("\n");
+    	}
+    	return str.toString();
     }
 }
