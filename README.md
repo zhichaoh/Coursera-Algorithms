@@ -31,6 +31,15 @@ PA-3 Pattern Recognition (Sort)
 			Brute.java;
 			Fast.java
 
+PA-4 8 Puzzle (Priority Queues)
+###
+		Specification:
+			http://coursera.cs.princeton.edu/algs4/assignments/8puzzle.html
+		Code:
+			Point.java;
+			Board.java;
+			Solver.java
+
 Part II
 
 PA-1 WordNet
