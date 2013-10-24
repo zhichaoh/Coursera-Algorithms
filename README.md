@@ -40,6 +40,14 @@ PA-4 8 Puzzle (Priority Queues)
 			Board.java;
 			Solver.java
 
+PA-5 Kd-Tree (Balanced Search Trees)
+###
+		Specification:
+			http://coursera.cs.princeton.edu/algs4/assignments/kdtree.html
+		Code:
+			PointSET.java;
+			KdTree.java
+
 Part II
 
 PA-1 WordNet
